@@ -1,11 +1,11 @@
 // TODO: include를 적절하게 추가
-#include "list.h"
-#include "queue.h"
-#include "stack.h"
+#include "list.cpp"
+#include "queue.cpp"
+#include "stack.cpp"
 #include <iostream>
 
 // TODO: T 타입을 적절한 타입으로 변경
-void print(T &list) { list.print(); }
+void print(LinkedList &list) { list.print(); }
 
 void testQueue() {
   Queue queue;
@@ -47,7 +47,7 @@ void testList() {
   List list;
 
   for (int i = 0; i < 10; i++)
-    list.insert(i, i);
+    list.insert(i,i);
 
   print(list);
 }
